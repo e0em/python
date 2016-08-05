@@ -1,0 +1,10 @@
+#
+*.pyc
+/docs/_build
+
+#
+/zipcodetw.egg-info
+/dist
+
+#
+/zipcodetw/*.db
