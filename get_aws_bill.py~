@@ -72,7 +72,7 @@ def get_metric(date, metrics):
 region_name = 'us-east-1'
 
 if __name__ == '__main__':
-	# 處理參數功能
+	# Arguments
 	parser = argparse.ArgumentParser(description = '抓取AWS 帳單資料.')
 	yesterday = datetime.datetime.now() - datetime.timedelta(days=1)  # 如果沒設定時間，默認抓取昨天的帳單.
 	parser.add_argument('-d', '--date', metavar='date', type=date, help='設定抓取的日期，沒設定默認昨天。', default=datetime.datetime(yesterday.year, yesterday.month, yesterday.day))

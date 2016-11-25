@@ -17,8 +17,6 @@ aws_key_id  = config.get('default', 'aws_access_key_id')           #抓Access ID
 aws_secret_id  = config.get('default', 'aws_secret_access_key')    #抓 Secret Key
 # 正式開始 
 conn = S3Connection(aws_key_id, aws_secret_id)
-
 bucket = conn.get_all_buckets()
-
 for b in bucket:
 	print b.name
